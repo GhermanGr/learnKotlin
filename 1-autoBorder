@@ -1,0 +1,14 @@
+fun main() {
+    var border = "!@#$"
+    var reps = 4
+    printBorder(border, reps)		
+    println("Hello, dude!")
+    printBorder(border, reps)
+}
+
+fun printBorder(border: String, reps: Int) {
+    repeat(reps) {
+        print(border)
+    }
+    println("")
+}
