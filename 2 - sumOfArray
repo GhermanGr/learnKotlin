@@ -1,0 +1,19 @@
+fun main() {
+    println(assCrack(6,3))
+    var siski = arrayOf(1, 2, 3, 4)
+    println(assCrackWithZvezdochka(siski))
+}
+
+fun assCrack(x: Int, y: Int): Double { 
+    return((x + y).toDouble()/2)
+}
+
+fun assCrackWithZvezdochka(zvezdochka: Array<Int>): Double { 
+    var i = 0
+    var samka = 0
+    while (i < zvezdochka.size) {
+        samka += zvezdochka[i]
+        i++
+    }
+   return(samka.toDouble()/zvezdochka.size)
+}
