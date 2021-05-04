@@ -1,0 +1,15 @@
+fun main() {
+    println(power(3, min(10, 3)))
+}
+
+fun min(x: Int, y: Int) = if (x < y) x else y
+
+fun power(p: Int, superMin: Int): Int {
+    var i = 0
+    var minInPower = 1
+    while (i < p) {
+        minInPower=minInPower*superMin
+        i++
+    }
+    return(minInPower)
+}
